@@ -1,0 +1,92 @@
+/* css reset */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #100F0F;
+    color: #acb2c4;
+    font-family: 'Roboto', sans-serif;
+}
+#heading{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 3rem;
+}
+.input-container{
+    width: 80%;
+    min-width: 300px;
+    background-color: #1b1b1b;
+    margin: 3rem auto;
+    padding: 20px 0;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.input-container #cities{
+    background-color: #000000;
+    color: white;
+    width: 90%;
+    display: block;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 10px 20px;
+    margin: 10px auto;
+    font-size: 20px;
+}
+::placeholder{
+    font-size: 20px;
+}
+
+#btn{
+    background-color: #EB1D36;
+    padding: 7px 10px;
+    color: #fff;
+    margin: auto;
+    border: none;
+    outline: transparent;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.container{
+    width: 80%;
+    min-width: 300px;
+    margin: 2rem auto;
+    background-color: #161616;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 30px 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1.5rem;
+}
+
+.container .city-box{
+    background-color: rgb(10, 10, 10);
+    padding: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container .city-box img{
+    height: 20px;
+}
+.container .city-box h2{
+    color: #acb2c4;
+    font-size: 18px;
+}
+.container .city-box h3{
+     font-size: 25px;
+     color: #EB1D36;
+     margin-left: 5px;
+}
